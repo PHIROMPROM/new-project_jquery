@@ -27,30 +27,30 @@
                     <option value="" disabled selected>Choose Rechipe......</option>
                 </select>
                 <hr>
-                <table class="table table-borderless" id="result"></table>
+                <div class="card shadow">
+                    <table class="table table-borderless" id="result"></table>
+                </div>
             </div>
             <div class="col-3"></div>
         </div>
     </div>
-    <div class="container mt-5" id="member">
+    <div class="container mt-5" id="increase-data">
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
                 <div class="input-group mb-3">
                         <h4>Number of person &nbsp; &nbsp;</h4>
                     <div class="input-group-prepend">
-                        <button type="button" id="minus">&minus;</button>
+                        <button type="button" id="minus" class="btn btn-danger">&minus;</button>
                     </div>
-                    <input type="number" class="form-control text-center" value="0" disabled id="member" max="15"
-                        min="0">
+                    <input type="number" class="form-control text-center" value="0" disabled id="member">
                     <div class="input-group-append">
-                        <button type="button" id="add">&#x2b;</button>
+                        <button type="button" id="add" class="btn btn-success">&#x2b;</button>
                     </div>
                 </div>
             </div>
             <div class="col-4"></div>
         </div>
-        <h1 id="show">0</h1>
     </div>
 
     <div class="container">
