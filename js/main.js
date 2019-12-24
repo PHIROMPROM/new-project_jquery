@@ -95,6 +95,7 @@ var udateIngredient=(ing,Increasement)=>{
     })
     $('#output').html(result);
 }
+// update Ingredientes
 var udateIngredientes=(ing,Decreasement)=>{
     var result ="";
     ing.forEach(item =>{

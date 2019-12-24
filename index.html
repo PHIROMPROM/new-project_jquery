@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PHIROMPROM</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <style>
-    .ruler{
+    .ruler {
         border-left: 1px solid blue;
         height: 50%;
         position: absolute;
         left: 50%;
     }
+    body {
+        background-image: url('images/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+        font-family:serif;
+    }
 </style>
+
 <body>
+    <div class="jumbotron bg-primary">
+        <img src="images/logo.png" alt="logo" class="img-fluid" width="150px">
+        <img src="images/banner-GIF.gif" alt="logo" class="float-right" width="500px" height="100px">
+        <h1 class="text-center text-light">WELCOME TO SPECIAL FOOD</h1>
+    </div>
     <div class="container mt-5">
         <div class="row">
             <div class="col-3"></div>
@@ -27,7 +43,7 @@
                     <option value="" disabled selected>Choose Rechipe......</option>
                 </select>
                 <hr>
-                <div class="card shadow">
+                <div class="card shadow bg-primary">
                     <table class="table table-borderless" id="result"></table>
                 </div>
             </div>
@@ -39,7 +55,7 @@
             <div class="col-3"></div>
             <div class="col-6">
                 <div class="input-group mb-3">
-                        <h4>Number of person &nbsp; &nbsp;</h4>
+                    <h4 class="text-light">Number of person &nbsp; &nbsp;</h4>
                     <div class="input-group-prepend">
                         <button type="button" id="minus" class="btn btn-danger">&minus;</button>
                     </div>
@@ -52,20 +68,26 @@
             <div class="col-4"></div>
         </div>
     </div>
-
     <div class="container">
         <div class="text-center ruler" id="ruler"></div>
-        <div class="row">
-           <div class="col-6">
-               <div class="text-center" id="ingredient"><h3>Ingredients</h3></div>
-            <table class="table table-borderless" id="output"></table>
-           </div>
-           <div class="col-6">
-                <div class="text-center" id="Instruction"><h3>Instructions</h3></div>
-               <table class="table table-borderless" id="out"></table>
-           </div>
+        <div class="card shadow border border-success">
+            <div class="row">
+                <div class="col-6">
+                    <div class="text-center" id="ingredient">
+                        <h3>Ingredients</h3>
+                    </div>
+                    <table class="table table-spride" id="output"></table>
+                </div>
+                <div class="col-6">
+                    <div class="text-center" id="Instruction">
+                        <h3>Instructions</h3>
+                    </div>
+                    <table class="table table-borderless" id="out"></table>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>
